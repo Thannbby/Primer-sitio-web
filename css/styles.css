@@ -151,12 +151,19 @@ p {
 }
 
 .padre{
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
     display: grid;
-    grid-template-columns: 200px 300px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 500px;
     background-color: #deb5e9;
+    justify-items: center;
+}
+.info_form, .info_enviar{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 30px;
 }
 
 /* Aplicando media para layout*/
@@ -181,8 +188,7 @@ p {
 
 @media screen and (max-width:780px) {
     h1 {
-        font-family: 30px 'EB Garamond', serif;
-        font-size: 15px;
+        font-size: 20px;
         padding-left: 35px;
     }
     .menu {
@@ -245,8 +251,6 @@ p {
     }
     .galería{
         width: 100%;
-        margin: 50px 0px 50px 0px;
-        padding: 60px 80px 150px 80px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr; 
