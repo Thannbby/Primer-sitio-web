@@ -118,6 +118,19 @@ h2 {
 .preparar {
     position: relative;
 }
+.articulo{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+}
+.section2{
+    display: flex;
+    width: 100%;
+    margin: 50px 20px 20px 10px;
+    padding:50px 20px 20px 20px ;
+    text-align: center;
+}
+
 /*productos*/
 
 .segundoparrafo {
