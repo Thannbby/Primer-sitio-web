@@ -10,7 +10,7 @@
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: white;
+    background-image: linear-gradient(to top,#c9f5e3, #ffffff);
     min-height: 100vh;
     font-family: 'Gentium Basic', serif;
 }
@@ -19,7 +19,7 @@ body {
     top: 0;
     z-index: 1000;
     height: 100px;
-    background-color: rgb(156, 133, 241);
+    background-color: #9c85f1;
     position: fixed;
     display: flex;
     width: 100%;
@@ -121,7 +121,10 @@ h2 {
 .articulo{
     display: grid;
     width: 80%;
+    padding-top: 50px;
+    margin-left: 150px;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 .section2{
     display: flex;
@@ -130,6 +133,10 @@ h2 {
     padding:50px 20px 20px 20px ;
     text-align: center;
 }
+.transform{
+    transform: rotate(5deg);
+}
+
 
 /*productos*/
 
