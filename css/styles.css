@@ -125,7 +125,9 @@ h2 {
     margin-left: 150px;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    justify-items: center;
 }
+
 .section2{
     display: flex;
     width: 100%;
@@ -176,15 +178,11 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 500px;
-    background-color: #deb5e9;
+    
     justify-items: center;
+
 }
-.info_form, .info_enviar{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    font-size: 30px;
-}
+
 
 /* Aplicando media para layout*/
 
