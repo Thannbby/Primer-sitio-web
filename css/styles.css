@@ -7,12 +7,15 @@
     box-sizing: border-box;
 }
 
-body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    background-image: linear-gradient(to top,#c9f5e3, #ffffff);
-    min-height: 100vh;
-    font-family: 'Gentium Basic', serif;
+
+.contenedorprueba{
+    min-height: 93vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        font-family: 'Gentium Basic', serif;
+        position: relative;
 }
 
 .menu {
@@ -67,42 +70,32 @@ h2 {
     margin: 50px 0px 50px 0px;
     padding: 60px 80px 150px 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60%; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60%;
     gap: 1em;
 }
 .imagen{
  text-align: center;
 }
-.footeruno{
-    padding-top: 10px;
-    padding-bottom: 5px;
-    background-color: #a479ac;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.footer{
+    height: 10%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #deb5e9;
+    align-items: center;
+}
+.footerlinks{
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
-.footerdos{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    list-style: none;
-    background-color: #a479ac;
+.footeredes{
+    width: 100px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 2em;
-    gap: 1em;
+    justify-content: space-around;
 }
-.footer1{
-    display: flex;
-    display: none;
-    }
-.footer2{
-        display: flex;
-        display: none;
-    }
-
 /*sobrenosotros*/
 .completo {
     margin: 30px 50px 50px 50px;
@@ -182,6 +175,16 @@ p {
     justify-items: center;
 
 }
+.contactanos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divinput{
+    width: 500px;
+}
 
 
 /* Aplicando media para layout*/
@@ -239,34 +242,27 @@ p {
     .menu_items li a:hover {
         color: red;
     }
-    .footer1{
-        padding-top: 10px;
-        padding-bottom: 5px;
-        background-color: #deb5e9;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    .articulo{
+        display: grid;
+        width: 10%;
+        margin-left: 30px;
+        grid-template-columns:1fr 1fr;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .section2{
         display: flex;
-        flex-direction: column;
+        width: 100%;
+        margin: 50px 20px 20px 10px;
+        padding:50px 20px 20px 20px ;
         text-align: center;
     }
-    .footer2{
-        padding-top: 5px;
-        padding-bottom: 5px;
-        list-style: none;
-        background-color: #deb5e9;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 1em;
-        gap: 1em;
+    .transform{
+        transform: rotate(5deg);
     }
-    .footeruno{
-        display: flex;
-        display: none;
-    }
-    .footerdos{
-        display: flex;
-        display: none;
-    }
+
     .galería{
         width: 100%;
         display: grid;
