@@ -13,21 +13,28 @@
     <script src="https://kit.fontawesome.com/2105cb73a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="contenedorprueba">
-        <nav class="menu">
-            
-          <h1>Noeartesania</h1>
-          <button class="toggle">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <ul class="menu_items">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
-            <li><a href="../pages/productos.html">Productos</a></li>
-            <li><a href="">Contacto</a></li>
-        </ul>
-        </nav>
+<div class="Contenedorbody">
 
+    <nav class="navmenu">
+        <h1> Noeartesania</h1>
+<ul class="nav">
+<li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+</li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../pages/sobrenosotros.html" role="button" aria-expanded="false">Sobre Nosotros</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Nuestra Filosofía</a></li>
+  </ul>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="../pages/productos.html">Productos</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="#">Contacto</a>
+</li>
+</ul>
+</nav>
 
     <div class="contacto">
         <h2>Contactanos</h2><br>
@@ -54,7 +61,7 @@
         <span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="RGPD" value="1" aria-invalid="false"><span class="wpcf7-list-item-label">Acepto la <a target="_&quot;blank&quot;" rel="nofollow" href="#">política de privacidad</a></span></label></span></span>
       </div>
       <div class="container p-3 my-6 divinput">
-      <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar" width="20%"> 
+      <input type="button" class="btn btn-outline-success" type="submit" name="enviar" value="enviar mensaje" class="btn-enviar" width="20%"> 
     </div>
     </main> 
 

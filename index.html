@@ -13,30 +13,31 @@
     <script src="https://kit.fontawesome.com/2105cb73a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="contenedorprueba">
-    <nav class="menu">
-            <h1> Noeartesania</h1>
-            <button class="toggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="menu_items">
-                <li class="active"><a href="">Inicio</a></li>
-                <li><a href="pages/sobrenosotros.html">Sobre Nosotros</a>
-                <ul class="submenu">
-                    <li> <a href="#">Nuestra filosofía</a></li>
-                </ul>
-                </li>
-                <li><a href="pages/productos.html">Productos</a></li>
-                <li><a href="./pages/Contacto.html">Contacto</a></li>
-            </ul>
+    <div class="Contenedorbody">
+        <nav class="navmenu">
+                <h1> Noeartesania</h1>
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./pages/sobrenosotros.html" role="button" aria-expanded="false">Sobre Nosotros</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Nuestra Filosofía</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+        </li>
+      </ul>
     </nav>
-<section>
-    <div class="titulocontainer">
+<section id="container">
+    <div class="titulocontenedor">
+        <h3>Cosmética sólida natural que cuida de ti y del planeta</h3>
         <h2>JABONES ARTESANALES Y NATURALES</h2>
-    </div>
-
-    <div  id="container">
-      <img src="./img/jabones.jpeg" alt="jabones" width="100%">
     </div>
 </section>
 
@@ -46,7 +47,7 @@
         <p>Creamos jabones artesanales naturales y productos de cosmética natural sólida sin plástico para un cuidado consciente y respetuoso.</p>
     </div>
 </section>
-    <div class="galería">
+    <div class="galería container-fluid">
         <div class="imagen" >
             <img src="./img/imgunoinicio.png" alt="jabon natural">
             <h3>JABÓN NATURAL</h3>
@@ -99,17 +100,20 @@
     <svg fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m14.5 0c-1.74 0-3.41.88283379-4.5 2.27792916-1.09-1.39509537-2.76-2.27792916-4.5-2.27792916-3.08 0-5.5 2.63760218-5.5 5.99455041 0 4.11989099 3.4 7.47683919 8.55 12.57765669l1.45 1.4277929 1.45-1.4386921c5.15-5.0899183 8.55-8.4468665 8.55-12.56675749 0-3.35694823-2.42-5.99455041-5.5-5.99455041zm-4.4 16.9482289-.1.1089918-.1-.1089918c-4.76-4.6975477-7.9-7.80381473-7.9-10.95367849 0-2.17983651 1.5-3.8147139 3.5-3.8147139 1.54 0 3.04 1.07901908 3.57 2.57220709h1.87c.52-1.49318801 2.02-2.57220709 3.56-2.57220709 2 0 3.5 1.63487739 3.5 3.8147139 0 3.14986376-3.14 6.25613079-7.9 10.95367849z" fill="currentColor"></path></svg></div><p></p></div><p></p><h3 class="has-text-align-center has-text-color has-custom-lineheight" style="color:#b9b0dd;line-height:1.5"><strong>REGALA SALUD</strong></h3><p></p><p class="has-text-align-center 0px has-custom-lineheight" style="line-height:1.5">Disfruta de coloridos embalajes y sus agradables aromas. Resultan perfectos para regalos y ocasiones especiales.</p></div></div><p></p></div>
 
 <section class="container-fluid">
-    <div>
-        <h3>SOBRE NUESTROS JABONES ARTESANALES Y NATURALES</h3><br>
-        <p>‘¿Qué hace que los jabones artesanales y naturales hechos a mano sean realmente únicos?. Sin duda, la combinación de sus ingredientes naturales les confieren excelentes propiedades curativas y estéticas. ¡Además del respetuoso cuidado de la piel! <br>
-            Como están realizados mediante el proceso de saponificación en frío, todos los aceites y mantecas vegetales de nuestros jabones conservan sus principios activos, vitaminas y glicerina natural. <br>
-            Por eso, todos nuestros jabones son artesanales y naturales, también el champú o acondicionador sólido o la pasta de dientes sólida. Porque, en Sapone di Valeria, somos cuidadosos contigo y con la naturaleza’.
-        </p><br>
-        <input type="submit" name="filosofía" value="Nuestra filosofía" class="btn-Filosofía" width="40%">
+    <div class="Filosofía filomedia">
+        <div>
+            <h3>SOBRE NUESTROS JABONES ARTESANALES Y NATURALES</h3><br>
+            <p>‘¿Qué hace que los jabones artesanales y naturales hechos a mano sean realmente únicos?. Sin duda, la combinación de sus ingredientes naturales les confieren excelentes propiedades curativas y estéticas. ¡Además del respetuoso cuidado de la piel! <br>
+                Como están realizados mediante el proceso de saponificación en frío, todos los aceites y mantecas vegetales de nuestros jabones conservan sus principios activos, vitaminas y glicerina natural. <br>
+                Por eso, todos nuestros jabones son artesanales y naturales, también el champú o acondicionador sólido o la pasta de dientes sólida. Porque, en Sapone di Valeria, somos cuidadosos contigo y con la naturaleza’.
+            </p><br>
+            <a type="button" class="btn btn-outline-warning" href="#">Nuestra Filosofía</a>
+        </div>
+        <div>
+            <img src="./img/Noe.jabonsandía.png" alt="" width="100%">
+        </div>
     </div>
-    <div>
-        <img src="./img/Noe.jabonsandía.png" alt="" width="15%">
-    </div>
+
 
 
 </section>
