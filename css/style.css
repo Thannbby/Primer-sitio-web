@@ -10,11 +10,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: #c73939;
   font-family: 'Gentium Basic', serif;
   position: relative; }
   .pruebasass .completo {
-    background-color: aquamarine; }
+    background-color: #063223; }
     .pruebasass .completo .titulocontainer {
       background-color: #b1d2d2; }
     .pruebasass .completo .segundoparrafo {
