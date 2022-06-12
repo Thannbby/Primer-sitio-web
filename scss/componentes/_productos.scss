@@ -5,19 +5,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: rgb(199, 57, 57);
     font-family: 'Gentium Basic', serif;
     position: relative;
     .completo{
-        background-color: aquamarine;
+        background-color: rgb(6, 50, 35);
         .titulocontainer{
             background-color: rgb(177, 210, 210);
         }
         .segundoparrafo{
+            
             display: block;
             margin-bottom: 50px;
         }
-    }
+    } 
 }
 
 
