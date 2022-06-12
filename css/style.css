@@ -3,23 +3,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&family=Gentium+Basic:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&family=Gentium+Basic:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&family=Gentium+Basic:ital@1&display=swap");
-.pruebasass {
+.productosass {
   min-height: 93vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #c73939;
+  background-color: white;
   font-family: 'Gentium Basic', serif;
   position: relative; }
-  .pruebasass .completo {
-    background-color: #063223; }
-    .pruebasass .completo .titulocontainer {
-      background-color: #b1d2d2; }
-    .pruebasass .completo .segundoparrafo {
-      display: block;
-      margin-bottom: 50px; }
+  .productosass .Productos {
+    margin: 10px 50px 50px 50px;
+    padding: 50px; }
+    .productosass .Productos p {
+      font-size: 20px; }
+  .productosass .video {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
 
 * {
   margin: 0;
@@ -73,7 +74,7 @@ h2 {
   width: 100%; }
 
 #container {
-  margin-top: 80px;
+  margin-top: 80;
   width: 100%;
   height: 800px;
   background-image: url(../img/jabones.jpeg);
@@ -88,7 +89,12 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+  color: white;
+  font-size: 2em; }
+  .titulocontenedor h2 {
+    color: white;
+    font-size: 2em; }
 
 .footer {
   height: 10%;
@@ -151,21 +157,6 @@ h2 {
 
 .transform {
   transform: rotate(5deg); }
-
-/*productos*/
-.segundoparrafo {
-  display: block;
-  margin-bottom: 50px; }
-
-p {
-  display: inline-block;
-  font-size: 20px;
-  font-family: 'Gentium Basic', serif; }
-
-.video {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
 
 /*contactos*/
 .contacto {
