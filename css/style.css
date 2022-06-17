@@ -34,23 +34,51 @@
   align-items: center;
   background-color: white;
   font-family: 'Gentium Basic', serif;
-  position: relative; }
-
-.nav {
-  text-decoration: none;
+  position: relative;
   font-size: 20px; }
 
+/*Menu de navegación*/
 .navbar {
   background-color: #ecbee0;
-  height: 80px; }
+  height: 80px;
+  text-decoration: none;
+  font-size: 20px; }
+  .navbar h1 {
+    font-family: 'EB Garamond', serif;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 35px;
+    padding: 5px; }
 
-h1 {
-  font-family: 'EB Garamond', serif;
+/*iNDEX*/
+#container {
+  margin-top: 80;
+  width: 100%;
+  height: 975px;
+  background-image: url(../img/jabones.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.titulocontenedor {
+  background-color: #f2f2ca;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
   color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-left: 35px;
-  padding: 5px; }
+  font-size: 2em; }
+  .titulocontenedor h2 {
+    color: black;
+    font-size: 2em; }
+  @media screen and (max-width: 780px) {
+    .titulocontenedor {
+      font-size: 1em; } }
 
 h2 {
   text-align: center;
@@ -61,58 +89,14 @@ h2 {
 
 .galería {
   width: 100%;
-  margin: 50px 0px 50px 0px;
-  padding: 60px 80px 150px 80px;
+  padding: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1em; }
-
-.imagen {
-  text-align: center; }
-
-.imagen img {
-  width: 100%; }
-
-#container {
-  margin-top: 80;
-  width: 100%;
-  height: 800px;
-  background-image: url(../img/jabones.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.titulocontenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  font-size: 2em; }
-  .titulocontenedor h2 {
-    color: white;
-    font-size: 2em; }
-
-.footer {
-  height: 10%;
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #deb5e9;
-  align-items: center; }
-
-.footerlinks {
-  display: flex;
-  flex-direction: column; }
-
-.footeredes {
-  width: 100px;
-  display: flex;
-  justify-content: space-around; }
+  .galería .imagen {
+    text-align: center; }
+  .galería .imagen img {
+    width: 100%; }
 
 .Filosofía {
   height: 100%;
@@ -124,6 +108,22 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start; }
+
+.footer {
+  height: 10%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #deb5e9;
+  align-items: center; }
+  .footer .footerlinks {
+    display: flex;
+    flex-direction: column; }
+  .footer .footeredes {
+    width: 100px;
+    display: flex;
+    justify-content: space-around; }
 
 /*sobrenosotros*/
 .completo {
@@ -165,26 +165,26 @@ h2 {
   height: 5%;
   text-align: center; }
 
-.padre {
-  width: 80%;
-  height: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px;
-  justify-items: center; }
-
-.contactanos {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+.form-control {
+  background-color: #dccbe0; }
 
 .divinput {
   width: 500px; }
 
 .grid {
   gap: 20px;
-  text-decoration-color: black; }
+  text-decoration-color: black;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px; }
+  .grid:hover {
+    background-color: #dfdae0; }
+  .grid #icon {
+    width: 45px;
+    font-size: 25px;
+    color: #c41c9f; }
 
 /* AvisoLegal */
 .aviso div {
@@ -192,22 +192,6 @@ h2 {
   padding: 20px; }
 
 /* Aplicando media para layout*/
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 50px; }
-
-.toggle {
-  color: black;
-  background-color: #9c85f1;
-  border: none;
-  font-size: 30px;
-  padding: 0 20px;
-  line-height: 60px;
-  display: flex;
-  display: none; }
-
 @media screen and (max-width: 780px) {
   #container {
     height: 400px; }
@@ -243,8 +227,10 @@ h2 {
     font-size: 20px; }
   .navmenu {
     height: 10vh; }
-  .toggle {
-    display: inline-flex; }
+  #natural {
+    background-color: #deb5e9;
+    display: flex;
+    align-content: center; }
   .section2 {
     display: flex;
     width: 100%;
