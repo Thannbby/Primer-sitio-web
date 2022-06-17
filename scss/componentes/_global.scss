@@ -17,6 +17,7 @@
     position: relative;
     font-size: $fzc;
 }
+
         /*Menu de navegación*/  
 .navbar{
     background-color: rgb(236, 190, 224);
@@ -33,6 +34,8 @@
     }
 
 }
+
+
           /*iNDEX*/
 #container{
     margin-top: 80;
@@ -60,9 +63,14 @@
         font-size: 2em;
     }
     @media screen and (max-width:780px){
-        font-size: 1em;
+        
+        .titulocontainer{
+            font-size: 1em;
+        }
+        h2{
+            font-size: 20px;
+        }
     }
-
 }
 
 
@@ -85,6 +93,18 @@ h2 {
        }
      .imagen img{
         width: 100%;
+        gap: 1em;
+    }
+    @media screen and (max-width:780px){
+            background-color: rgb(228, 240, 240);
+            justify-items: center;
+        .imagen{
+            background-color: #efdcf5;
+            width: 70%;
+            justify-content: center;
+            gap: 1,5;
+        }
+
     }
 }
    
@@ -102,7 +122,7 @@ h2 {
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
-    background-color: $bg-rosa;
+    background-color: $bg-footer;
     align-items: center;
 
 .footerlinks{
@@ -117,21 +137,26 @@ h2 {
 
 }
 
+
 /*sobrenosotros*/
 
 .completo {
     margin: 30px 50px 50px 50px;
+    .titulocontainer{
+        margin-top: 80px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .preparar {
+        position: relative;
+    }
+    @media screen and (max-width:780px){
+        font-size: 15px;
+    }
 }
 
-.titulocontainer{
-    margin-top: 80px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-.preparar {
-    position: relative;
-}
+
 .articulo{
     width: 100%;
     margin: 50px;
@@ -141,17 +166,41 @@ h2 {
     gap: 30px;
     justify-items: center;
     align-items: center;
+    .transform{
+        transform: rotate(5deg);
+    }
+    @media screen and (max-width:780px){
+        grid-template-columns: 0fr;
+        gap: 15px;
+        font-size: 15px;
+        .transform{
+            transform: rotate(5deg);
+        }
+        .area2{
+            display: none;
+        }
+        h3{
+            color: rgb(79, 47, 224);
+        }
+    
+    }
+    
 }
 
 .section2{
     display: flex;
     width: 100%;
-    margin: 50px 20px 20px 10px;
-    padding:50px 20px 20px 20px ;
+    margin: 50px;
+    padding:50px;
     text-align: center;
-}
-.transform{
-    transform: rotate(5deg);
+    @media screen and (max-width:780px){
+        font-size: 15px;
+        display: flex;
+        justify-items: center;
+        #hola{
+            width: 60%;
+        }
+    }
 }
 
 /*contactos*/
@@ -187,6 +236,7 @@ h2 {
     @include color-icon;
 }
 }
+
 /* AvisoLegal */
 
 .aviso div{
@@ -198,9 +248,7 @@ h2 {
 /* Aplicando media para layout*/
 
 @media screen and (max-width:780px) {
-    #container{
-        height: 400px;
-    }
+
     .navbar{
         background-color: aqua;
     }
@@ -209,33 +257,12 @@ h2 {
         width: 100%; margin: 0; padding: 20; gap: 20px;
         display: flex; flex-direction: column; 
      }
-    .articulo{
-        display: none;
-    }
-    .articulomd{
-        width: 100%;
-        margin: 10px;
-        padding: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        justify-items: center;
-        align-items: center;
-        background-color: aqua;
-    }
-    .area1, .area2, .area3{
-        font-size: 20px;
-        width: 70%;
-        padding: 10px;
-    }
    
         h1{
             font-size: 20px;
             padding-left: 35px;
         }
-    h2{
-        font-size: 20px;
-    }
+
     .navmenu{
         height: 10vh;
     }
@@ -251,9 +278,6 @@ h2 {
         margin: 50px 20px 20px 10px;
         padding:50px 20px 20px 20px ;
         text-align: center;
-    }
-    .transform{
-        transform: rotate(5deg);
     }
 
     .galería{
