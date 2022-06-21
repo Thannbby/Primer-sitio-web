@@ -20,7 +20,7 @@
 
         /*Menu de navegación*/  
 .navbar{
-    background-color: rgb(236, 190, 224);
+    background-color: $bg-fondo;
     height: 80px;
     text-decoration: none;
     font-size: 20px;
@@ -32,7 +32,6 @@
         margin-left: 35px;
         padding: 5px;
     }
-
 }
 
 
@@ -86,10 +85,13 @@ h2 {
     width: 100%;
     padding: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1em;
     .imagen{
         text-align: center;
+        .rounded-4{
+            width: 70%;
+        }
        }
      .imagen img{
         width: 100%;
@@ -116,6 +118,7 @@ h2 {
 }
 
      /*footer*/
+
 .footer{
     height: 10%;
     width: 100%;
@@ -128,6 +131,7 @@ h2 {
 .footerlinks{
     display: flex;
     flex-direction: column;
+    
 }
 .footeredes{
     width: 100px;
@@ -237,13 +241,17 @@ h2 {
 }
 }
 
-/* AvisoLegal */
+/* AvisoLegal y Privacidad */
 
 .aviso div{
     margin-top: 100px;
     padding: 20px;
 }
 
+.politica, .privacidad{
+    margin-top: 100px;
+    padding: 20px;
+}
 
 /* Aplicando media para layout*/
 

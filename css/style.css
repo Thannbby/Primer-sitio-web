@@ -14,6 +14,9 @@
   .productosass .Productos {
     margin: 10px 50px 50px 50px;
     padding: 50px; }
+    .productosass .Productos .titulocontainer {
+      text-align: center;
+      margin-top: 50px; }
     .productosass .Productos p {
       font-size: 20px; }
   .productosass .video {
@@ -21,6 +24,21 @@
     display: flex;
     flex-direction: row;
     justify-content: center; }
+  .productosass .regalo {
+    padding: 50px; }
+    .productosass .regalo h3 {
+      text-align: center; }
+  .productosass .cards {
+    width: 100%;
+    margin: 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 30px; }
+    .productosass .cards .card {
+      text-align: center; }
 
 * {
   margin: 0;
@@ -39,7 +57,7 @@
 
 /*Menu de navegación*/
 .navbar {
-  background-color: #ecbee0;
+  background-color: #dcbaf5;
   height: 80px;
   text-decoration: none;
   font-size: 20px; }
@@ -93,10 +111,12 @@ h2 {
   width: 100%;
   padding: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1em; }
   .galería .imagen {
     text-align: center; }
+    .galería .imagen .rounded-4 {
+      width: 70%; }
   .galería .imagen img {
     width: 100%;
     gap: 1em; }
@@ -217,8 +237,12 @@ h2 {
     font-size: 25px;
     color: #c41c9f; }
 
-/* AvisoLegal */
+/* AvisoLegal y Privacidad */
 .aviso div {
+  margin-top: 100px;
+  padding: 20px; }
+
+.politica, .privacidad {
   margin-top: 100px;
   padding: 20px; }
 
