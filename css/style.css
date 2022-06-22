@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&family=Gentium+Basic:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&family=Gentium+Basic:ital@1&display=swap");
+.Contenedorbody, .titulocontenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .productosass {
   min-height: 93vh;
   display: flex;
@@ -25,7 +30,8 @@
     flex-direction: row;
     justify-content: center; }
   .productosass .regalo {
-    padding: 50px; }
+    padding: 50px;
+    font-size: 20px; }
     .productosass .regalo h3 {
       text-align: center; }
   .productosass .cards {
@@ -39,6 +45,15 @@
     gap: 30px; }
     .productosass .cards .card {
       text-align: center; }
+  @media screen and (max-width: 780px) {
+    .productosass {
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      .productosass .video {
+        align-items: center; }
+      .productosass .cards {
+        grid-template-columns: 1fr; } }
 
 * {
   margin: 0;
@@ -47,9 +62,6 @@
 
 .Contenedorbody {
   min-height: 93vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: white;
   font-family: 'Gentium Basic', serif;
   position: relative;
@@ -57,7 +69,7 @@
 
 /*Menu de navegación*/
 .navbar {
-  background-color: #dcbaf5;
+  background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%);
   height: 80px;
   text-decoration: none;
   font-size: 20px; }
@@ -84,9 +96,7 @@
 .titulocontenedor {
   background-color: #f2f2ca;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  opacity: 0.5;
   padding: 10px;
   text-align: center;
   color: black;
@@ -125,7 +135,6 @@ h2 {
       background-color: #e4f0f0;
       justify-items: center; }
       .galería .imagen {
-        background-color: #efdcf5;
         width: 70%;
         justify-content: center;
         gap: 1,5; } }
@@ -141,22 +150,36 @@ h2 {
   justify-content: space-between;
   align-items: flex-start; }
 
+.hablamos {
+  margin: 50px;
+  padding: 50px;
+  text-align: center;
+  background-color: #ffcfdf;
+  background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%); }
+  @media screen and (max-width: 780px) {
+    .hablamos .uno {
+      margin: 0;
+      display: none;
+      background-color: #e9e1d7; } }
+
 /*footer*/
 .footer {
   height: 10%;
   width: 100%;
   padding: 10px;
   display: flex;
+  align-content: center;
   justify-content: space-evenly;
-  background-color: #deb5e9;
-  align-items: center; }
+  background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%); }
   .footer .footerlinks {
     display: flex;
     flex-direction: column; }
   .footer .footeredes {
     width: 100px;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    color: black;
+    font-size: 30px; }
 
 /*sobrenosotros*/
 .completo {
@@ -187,13 +210,19 @@ h2 {
     .articulo {
       grid-template-columns: 0fr;
       gap: 15px;
-      font-size: 15px; }
+      font-size: 15px;
+      margin-top: 0;
+      padding-bottom: 0;
+      background-color: #fae9fa; }
       .articulo .transform {
         transform: rotate(5deg); }
       .articulo .area2 {
         display: none; }
       .articulo h3 {
         color: #4f2fe0; } }
+  @media screen and (max-width: 360px) {
+    .articulo {
+      background-color: white; } }
 
 .section2 {
   display: flex;
@@ -203,6 +232,8 @@ h2 {
   text-align: center; }
   @media screen and (max-width: 780px) {
     .section2 {
+      margin-top: 0;
+      padding-top: 0;
       font-size: 15px;
       display: flex;
       justify-items: center; }
