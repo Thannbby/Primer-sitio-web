@@ -1,0 +1,87 @@
+/*sobrenosotros*/
+
+.completo {
+    margin: 30px 50px 50px 50px;
+    .titulocontainer{
+        margin-top: 80px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .preparar {
+        position: relative;
+    }
+    @media screen and (max-width:780px){
+        font-size: 15px;
+    }
+}
+
+
+.articulo{
+    width: 100%;
+    margin: 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    .transform{
+        transform: rotate(5deg);
+    }
+    @media screen and (max-width:780px){
+        grid-template-columns: 0fr;
+        gap: 15px;
+        font-size: 15px;
+        margin-top: 0;
+        padding-bottom: 0;
+        background-color: #fae9fa;
+        .transform{
+            transform: rotate(5deg);
+        }
+        .area2{
+            display: none;
+        }
+        h3{
+            color: rgb(79, 47, 224);
+        }
+    }
+    @media screen and (max-width:360px){
+        background-color: white;
+    }
+    
+}
+
+.section2{
+    display: flex;
+    width: 100%;
+    margin: 50px;
+    padding:50px;
+    text-align: center;
+    background-image: $bg-filosofia;
+    @media screen and (max-width:780px){
+
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 15px;
+        display: flex;
+        justify-items: center;
+        #hola{
+            width: 60%;
+        }
+    }
+}
+
+.area2, .area3, .area5,{
+    animation-name: cambiarposicion;
+    animation-duration: 3s;
+    animation-direction: reverse;
+}
+@keyframes cambiarposicion{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}

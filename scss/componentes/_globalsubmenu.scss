@@ -1,0 +1,150 @@
+.Contenedorsubmenu{
+    min-height: 93vh;
+    @extend %display;
+    background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+    font-family: 'Gentium Basic', serif;
+    position: relative;
+    font-size: $fzc;
+}
+#champu{
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gentium Basic', serif;
+    position: relative;
+
+    .champutext{
+        margin: 50px;
+        padding: 30px;
+        gap: 5px;
+}
+.cardschampu{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    .cardchampu{
+        text-align: center;
+        justify-self: center;
+        padding: 20px;
+        
+    }
+    .jabonatural{
+        border-bottom: 2px double #9999ff;
+        padding-bottom: 5px;
+        transition: all 400ms ease;
+    
+    &:hover{
+        transform: translateY(-3%);
+    }
+    }
+    .champusolido{
+        background-color: #e8dbfc;
+        .btn{
+            &:hover{
+                transform: translateY(-6%);
+            }
+        }
+    }
+    .packregalo{
+        border: 2px solid #e8dbfc;
+    }
+    .btn{
+        background-color: #9999ff;
+        color: black;
+        &:hover{
+            background-color: #9218f5;
+        }
+    }
+    .acondicionador{
+        border: 10px ridge #e753d3;
+    }
+}
+}
+.cardnatural{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    .cardnatura{
+        text-align: center;
+        justify-self: center;
+    }
+}
+
+.cardanimacion1{
+    animation-name: cardefecto1;
+    animation-duration: 2s;
+    @keyframes cardefecto1{
+        0%{
+            transform: scale(.3);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+}
+
+.cardanimacion2{
+    animation-name: cardefecto2;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    @keyframes cardefecto2{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+}
+}
+.cardanimacion3{
+    animation-name: cardefecto;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    @keyframes cardefecto{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+}
+}
+.cardanimacion4{
+    animation-name: cardefecto4;
+    animation-duration: 1s;
+    animation-direction: reverse;
+
+    @keyframes cardefecto4{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+}
+}
+.cardanimacion5{
+    animation-name: cardefecto5;
+    animation-duration: 1s;
+    animation-direction: reverse;
+
+
+    @keyframes cardefecto5{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+}
+}

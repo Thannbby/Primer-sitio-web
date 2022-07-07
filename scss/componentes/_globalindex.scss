@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&family=Gentium+Basic:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Contenedorbody{
+    min-height: 93vh;
+    justify-self: center;
+    @extend %display;
+    background-color: white;
+    font-family: 'Gentium Basic', serif;
+    position: relative;
+    font-size: $fzc;
+}
+
+        /*Menu de navegación*/  
+.navbar{
+    background-image: $bg-fondo;
+    height: 80px;
+    text-decoration: none;
+    font-size: 20px;
+    h1 {
+        font-family: 'Cinzel';
+        color: rgb(12, 12, 12);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left: 35px;
+        padding: 5px;
+    }
+}
+
+          /*iNDEX*/
+#container{
+    margin-top: 80;
+    width: 100%;
+    height: 975px;
+    background-image: url(../img/jabones.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulocontenedor{
+    background-color: map-get($contenedor , bg-color);
+    border-radius: map-get($contenedor, bordes);
+    opacity: 0.7;
+    @extend %display;
+    padding: map-get($contenedor, padding);
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    h2{
+        color: black;
+        font-size: 2em;
+    }
+
+    animation-name: tituloefecto;
+    animation-duration: 3s;
+    @keyframes tituloefecto{
+        0%{
+            transform: scale(.3);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+}
+
+h2 {
+    text-align: center;
+    display: inline-block;
+    color: $color-titulo;
+    margin: 10px 0 15px 0;
+    font-family: 'Cinzel', serif;
+}
+
+.galería{
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    .imagen{
+        text-align: center;
+        h3{
+            margin-top: 20px;
+        }
+        .rounded-4{
+            width: 70%;
+        }
+       }
+     .imagen img{
+        width: 100%;
+        gap: 1em;
+        &:hover{
+            box-shadow: 5px 5px 20px rgba(212, 136, 21, 0.4);
+            transform: translateZ(-3%);
+        }
+    }
+}
+.Filosofía{
+    height: 100%;
+    width: 100%; margin: 0; padding: 50px; gap: 50px;
+    font-family: 'Gentium Basic', serif;
+    font-size: $fzc;
+    display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start;
+    border: 3px solid rgb(245, 173, 92);
+}
+
+.hablamos{
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+    background-color: #ffcfdf;
+    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    font-family: 'Gentium Basic', serif;
+    font-size: $fzc;
+}
+
+.iconos-sociales{
+        gap: 40px;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        transition: all 400ms ease;
+ &:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-6%);
+}
+}
+
+     /*footer*/
+
+.footer{
+    height: 10%;
+    width: 100%;
+    padding: 10px;
+    @include img;
+    justify-content: space-evenly;
+   background-image: $bg-footer;
+
+.footerlinks{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+}
+
+/* AvisoLegal y Privacidad */
+
+.aviso div{
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.politica, .privacidad{
+    margin-top: 100px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 480px){
+    .Contenedorbody{
+
+    }
+    .navbar{
+        font-size: $fzc-media;
+        align-self: center;
+        background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+    }
+    h1{
+        font-size: $fzc-media;
+        align-self: center;
+    }
+}
+
