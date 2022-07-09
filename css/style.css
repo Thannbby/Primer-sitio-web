@@ -15,8 +15,7 @@
   flex-direction: column;
   align-items: center;
   background-color: white;
-  font-family: 'Gentium Basic', serif;
-  position: relative; }
+  font-family: 'Gentium Basic', serif; }
   .productosass .Productos {
     margin: 10px 50px 50px 50px;
     padding: 50px; }
@@ -65,15 +64,25 @@
     .productosass .cards .card:hover {
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
       transform: translateY(-3%); }
-  @media screen and (max-width: 780px) {
-    .productosass {
-      display: flex;
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .productosass .Productos {
+    margin: 20px;
+    padding: 20px; }
+  .productosass .Productos p {
+    font-size: 10px; }
+  .productosass .cards {
+    padding: 0;
+    margin: 0;
+    width: 100%; }
+    .productosass .cards .card {
+      width: 50%;
+      margin: 20px;
+      padding: 20px;
+      flex-direction: row;
       justify-content: center;
-      align-content: center; }
-      .productosass .video {
-        align-items: center; }
-      .productosass .cards {
-        grid-template-columns: 1fr; } }
+      align-content: center;
+      gap: 10px; } }
 
 * {
   margin: 0;
@@ -85,7 +94,6 @@
   justify-self: center;
   background-color: white;
   font-family: 'Gentium Basic', serif;
-  position: relative;
   font-size: 20px; }
 
 /*Menu de navegación*/
@@ -214,14 +222,126 @@ h2 {
   margin-top: 100px;
   padding: 20px; }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .Contenedorbody {
+    box-sizing: content-box;
+    width: 100%; }
   .navbar {
-    font-size: 15px;
+    font-size: 20px;
     align-self: center;
     background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%); }
   h1 {
+    font-size: 20px;
+    align-self: center; }
+  h2 {
+    color: #fb7ba2;
     font-size: 15px;
-    align-self: center; } }
+    text-align: center; }
+  h3 {
+    font-size: 15px; }
+  p {
+    font-size: 10px; }
+  #container {
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+    height: 600px; }
+    #container .titulocontenedor {
+      font-size: 80px;
+      width: 80%; }
+      #container .titulocontenedor h2 {
+        font-size: 20px; }
+  .galería {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+    font-size: 10px;
+    gap: 1em; }
+  .Filosofía {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    gap: 10px;
+    font-family: 'Gentium Basic', serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid #f5ad5c; }
+    .Filosofía #noe {
+      display: none; }
+  .hablamos {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffcfdf;
+    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    font-family: 'Gentium Basic', serif;
+    font-size: 20px; }
+  .footer p {
+    font-size: 10px; }
+  .footer .footerlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px; } }
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  .navbar {
+    background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%); }
+  h2 {
+    color: #7e1635;
+    font-size: 25px; }
+  h3 {
+    font-size: 20px; }
+  p {
+    font-size: 15px; }
+  #container {
+    background-image: url(../img/jabones.jpeg);
+    height: 800px; }
+    #container .titulocontenedor {
+      font-size: 80px;
+      width: 80%; }
+      #container .titulocontenedor h2 {
+        font-size: 35px; }
+  .galería {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 50px;
+    font-size: 10px; }
+  .Filosofía {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    gap: 10px;
+    font-family: 'Gentium Basic', serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid #50c5ce; }
+    .Filosofía #noe {
+      display: none; }
+  .hablamos {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffcfdf;
+    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    font-family: 'Gentium Basic', serif;
+    font-size: 20px; }
+  .footer p {
+    font-size: 10px; }
+  .footer .footerlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px; } }
 
 .Contenedorsubmenu {
   min-height: 93vh;
@@ -371,9 +491,6 @@ h2 {
     justify-content: center; }
   .completo .preparar {
     position: relative; }
-  @media screen and (max-width: 780px) {
-    .completo {
-      font-size: 15px; } }
 
 .articulo {
   width: 100%;
@@ -386,23 +503,6 @@ h2 {
   align-items: center; }
   .articulo .transform {
     transform: rotate(5deg); }
-  @media screen and (max-width: 780px) {
-    .articulo {
-      grid-template-columns: 0fr;
-      gap: 15px;
-      font-size: 15px;
-      margin-top: 0;
-      padding-bottom: 0;
-      background-color: #fae9fa; }
-      .articulo .transform {
-        transform: rotate(5deg); }
-      .articulo .area2 {
-        display: none; }
-      .articulo h3 {
-        color: #4f2fe0; } }
-  @media screen and (max-width: 360px) {
-    .articulo {
-      background-color: white; } }
 
 .section2 {
   display: flex;
@@ -431,3 +531,51 @@ h2 {
     transform: translateX(0); }
   100% {
     transform: translateX(100%); } }
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .articulo {
+    grid-template-columns: 0fr;
+    gap: 15px;
+    justify-content: center;
+    background-color: #fae9fa; }
+    .articulo .area {
+      margin: 10px;
+      padding: 10px;
+      width: 80%; }
+    .articulo .area2 {
+      display: none; }
+    .articulo h3 {
+      color: #5c035e;
+      text-align: center; }
+  .section2 {
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-items: center; }
+    .section2 #hola {
+      width: 60%; } }
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  .articulo {
+    grid-template-columns: 0fr;
+    gap: 15px;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    background-color: #ece3c5; }
+    .articulo .area {
+      margin: 50px;
+      padding: 0px;
+      width: 100%; }
+    .articulo .area2 {
+      display: none; }
+    .articulo h3 {
+      color: #5c035e;
+      text-align: center; }
+  .section2 {
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 20px; }
+    .section2 #hola {
+      width: 100%; } }

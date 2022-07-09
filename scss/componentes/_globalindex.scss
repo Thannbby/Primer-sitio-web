@@ -13,7 +13,6 @@
     @extend %display;
     background-color: white;
     font-family: 'Gentium Basic', serif;
-    position: relative;
     font-size: $fzc;
 }
 
@@ -161,9 +160,10 @@ h2 {
     padding: 20px;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 300px) and (max-width: 480px) {
     .Contenedorbody{
-
+        box-sizing: content-box;
+        width: 100%;
     }
     .navbar{
         font-size: $fzc-media;
@@ -174,5 +174,146 @@ h2 {
         font-size: $fzc-media;
         align-self: center;
     }
+
+    h2 {
+        color: #fb7ba2;
+        font-size: 15px;
+        text-align: center;
+    }
+    h3{
+        font-size: 15px;
+    }
+    
+    p{
+        font-size: 10px;
+    }
+    #container{
+        background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+        height: 600px;
+        .titulocontenedor{
+            font-size: 80px;
+            width: 80%;
+            h2{
+                font-size: 20px;
+            }
+        }
+    }
+    .galería{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+        font-size: 10px;
+        gap: 1em;
+}
+
+.Filosofía{
+    height: 100%;
+    width: 100%; margin: 0; padding: 10px; gap: 10px;
+    font-family: 'Gentium Basic', serif;
+    font-size: 15px;
+    display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start;
+    border: 2px solid rgb(245, 173, 92);
+    #noe{
+        display: none;
+    }
+}
+
+
+
+.hablamos{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffcfdf;
+    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    font-family: 'Gentium Basic', serif;
+    font-size: $fzc;
+}
+
+
+.footer{
+    p{
+        font-size: 10px;
+    }
+    .footerlinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-size: 10px;
+    }
+}
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+    .navbar{
+        background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+    }
+    
+    h2 {
+        color: #7e1635;
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 15px;
+    }
+
+    #container{
+        background-image: url(../img/jabones.jpeg);
+        height: 800px;
+        .titulocontenedor{
+            font-size: 80px;
+            width: 80%;
+            h2{
+                font-size: 35px;
+            }
+    }
+}
+    .galería{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        padding: 50px;
+        font-size: 10px;
+}
+
+.Filosofía{
+    height: 100%;
+    width: 100%; margin: 0; padding: 10px; gap: 10px;
+    font-family: 'Gentium Basic', serif;
+    font-size: 15px;
+    display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start;
+    border: 2px solid rgb(80, 197, 206);
+    #noe{
+        display: none;
+    }
+}
+
+.hablamos{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffcfdf;
+    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    font-family: 'Gentium Basic', serif;
+    font-size: $fzc;
+}
+
+.footer{
+    p{
+        font-size: 10px;
+    }
+    .footerlinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-size: 10px;
+    }
+}
 }
 
