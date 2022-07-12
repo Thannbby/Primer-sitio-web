@@ -197,7 +197,7 @@ h2 {
     gap: 1em; }
     .galería .imagen img:hover {
       box-shadow: 5px 5px 20px rgba(212, 136, 21, 0.4);
-      transform: translateZ(-3%); }
+      transform: translateY(-2%); }
 
 .Filosofía {
   height: 100%;
@@ -212,6 +212,16 @@ h2 {
   justify-content: space-between;
   align-items: flex-start;
   border: 3px solid #f5ad5c; }
+  .Filosofía .btn-outline-warning {
+    background-color: #dad2f3;
+    border: 1px solid #f5ad5c;
+    font-size: 20px;
+    color: black; }
+    .Filosofía .btn-outline-warning:hover {
+      background-color: #fba8a4;
+      transform: translateY(-2%); }
+  .Filosofía:hover {
+    background-image: linear-gradient(315deg, #fac1be 0%, #e2dcf5 74%); }
 
 .hablamos {
   margin: 50px;
@@ -221,6 +231,8 @@ h2 {
   background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
   font-family: 'Gentium Basic', serif;
   font-size: 20px; }
+  .hablamos .btn-warning:hover {
+    background-color: #77f7f2; }
 
 .iconos-sociales {
   gap: 40px;

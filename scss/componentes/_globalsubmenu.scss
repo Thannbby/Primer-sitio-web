@@ -1,0 +1,176 @@
+.Contenedorsubmenu{
+    min-height: 93vh;
+    @extend %display;
+    background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+    font-family: 'Gentium Basic', serif;
+    font-size: $fzc;
+}
+#champu{
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gentium Basic', serif;
+
+    .champutext{
+        margin: 50px;
+        padding: 30px;
+        gap: 5px;
+}
+.cardschampu{
+    gap: 15px;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    .cardchampu{
+        text-align: center;
+        justify-self: center;
+        padding: 20px;
+        img{
+            width: 80%;
+        }
+        
+    }
+    .jabonatural{
+        border-bottom: 2px double #9999ff;
+        padding-bottom: 5px;
+        transition: all 400ms ease;
+    
+    &:hover{
+        transform: translateY(-3%);
+    }
+    }
+    .champusolido{
+        background-color: #e8dbfc;
+        .btn{
+            &:hover{
+                transform: translateY(-6%);
+            }
+        }
+    }
+    .packregalo{
+        border: 2px solid #e8dbfc;
+    }
+    .btn{
+        background-color: #9999ff;
+        color: black;
+        &:hover{
+            background-color: #9218f5;
+        }
+    }
+    .acondicionador{
+        border: 10px ridge #e753d3;
+    }
+}
+}
+.cardnatural{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    .cardnatura{
+        text-align: center;
+        justify-self: center;
+    }
+}
+
+.cardanimacion1{
+    animation-name: cardefecto1;
+    animation-duration: 2s;
+    @keyframes cardefecto1{
+        0%{
+            transform: scale(.3);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+}
+
+.cardanimacion2{
+    animation-name: cardefecto2;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    @keyframes cardefecto2{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+}
+}
+.cardanimacion3{
+    animation-name: cardefecto;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    @keyframes cardefecto{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+}
+}
+.cardanimacion4{
+    animation-name: cardefecto4;
+    animation-duration: 1s;
+    animation-direction: reverse;
+
+    @keyframes cardefecto4{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+}
+}
+.cardanimacion5{
+    animation-name: cardefecto5;
+    animation-duration: 1s;
+    animation-direction: reverse;
+
+
+    @keyframes cardefecto5{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+}
+}
+@media screen and (min-width: 300px) and (max-width: 480px) {
+    .Contenedorsubmenu{
+        background-image: none;
+    }
+    #champu .cardschampu{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    #champu .champutext {
+        margin: 80px 20px 20px 20px;
+        padding: 0px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 780px) {
+    #champu .cardschampu{
+        grid-template-columns: 1fr;
+        width: 75%;
+        gap: 20px;
+    }
+    #champu .champutext {
+        margin: 80px 20px 20px 20px;
+        padding: 0px;
+}
+}

@@ -1,0 +1,124 @@
+
+.productosass{
+    min-height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: 'Gentium Basic', serif;
+    .Productos{
+        margin: 10px 50px 50px 50px;
+        padding: 50px;
+        .titulocontainer{
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+    .video{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        animation-name: videoefecto;
+        animation-duration: 3s;
+        @keyframes videoefecto{
+            0%{
+                transform: scale(.3);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        &:hover{
+            transform: translateZ(-10%);
+        }
+        iframe{
+            width: 600px;
+            height: 355px;
+        }
+    }
+    .regalo{
+        padding: 50px;
+        font-size: 20px;
+        h3{
+            text-align: center;
+            color: rgb(209, 64, 209);
+        }
+
+    }
+    .cards{
+        width: 100%;
+        margin: 50px;
+        padding: 50px;
+        display: grid;
+        background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+        .card{
+            width: 75%;
+            text-align: center;
+            justify-self: center;
+            padding: 20px;
+            background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            transition: all 400ms ease;
+        }
+        .card:hover{
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+            transform: translateY(-3%);
+        }
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 480px) {
+    .productosass .cards{
+        padding: 0;margin: 20px;
+        background-image: none;
+        width: 80%;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+        grid-template-columns: 1fr;
+
+
+        .card{
+            width: 100%;
+        }
+    }
+    .productosass .Productos {
+        margin: 0 20px 0 20px; padding: 20px;
+        }
+    .productosass .regalo{
+        margin: 0 20px 0 20px; padding: 0;
+    }
+    .video iframe{
+        display: none;
+    }
+
+
+}
+@media screen and (min-width: 480px) and (max-width: 780px) {
+    .productosass .cards{
+        width: 100%;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        background-image: none;
+    }
+    .productosass .Productos {
+        margin: 0 30px 0 30px; padding: 35px;
+        }
+    .productosass .regalo{
+        margin: 0 30px 0 30px; padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
