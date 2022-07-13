@@ -19,7 +19,6 @@
 
         /*Menu de navegación*/  
 
-
       .navbar{
         background-image: $bg-fondo;
         text-decoration: none;
@@ -47,9 +46,7 @@
             padding: 10px;
         }
     }
-    .navbar-expand-lg .navbar-nav {
-        gap: 15px;
-    }
+    .navbar-expand-lg .navbar-nav{gap: 15px;}
 
           /*iNDEX*/
 #container{
@@ -113,6 +110,7 @@ h2 {
      .imagen img{
         width: 100%;
         gap: 1em;
+        border: 1px solid #f3c69c;
         &:hover{
             box-shadow: 5px 5px 20px rgba(212, 136, 21, 0.4);
             transform: translateY(-2%);
@@ -193,6 +191,13 @@ h2 {
         align-self: center;
         background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
     }
+    .navbar-expand-lg .navbar-nav{gap: 10px; width: 50%;}
+    .navbar .btn-primary{font-size: 10px; background-color:#f3a1ba}
+    .navbar .dropdown-menu{font-size: 10px; background-color: #f1b9ca}
+    .offcanvas-header{background-image: linear-gradient(315deg, #fae35e 0%, #fa8dae 74%); font-size: 20px;}
+    .offcanvas-title{font-size: 15px;font-family: 'Cinzel'; }
+    .offcanvas-body{background-color: #f1eccf}
+
     h1{
         font-size: $fzc-media;
         align-self: center;
@@ -208,7 +213,7 @@ h2 {
     }
     
     p{
-        font-size: 10px;
+        font-size: 15px;
     }
     #container{
         background-image: url(../img/hacerjabones4.jpg);
@@ -223,6 +228,7 @@ h2 {
             }
         }
     }
+    #primerparrafo{ padding: 10px;}
     .galería{
         display: flex;
         flex-direction: column;
@@ -272,10 +278,15 @@ h2 {
 }
 
 @media screen and (min-width: 480px) and (max-width: 780px) {
-
     .navbar{
-        background-image: linear-gradient(315deg, #8ae9b3 0%, #c8d6e5 74%);
+        background-image: linear-gradient(315deg,  #bdd2e7 0%,#7cecac 74%);
     }
+    .navbar-expand-lg .navbar-nav{gap: 15px; width: 80%;}
+    .navbar .btn-primary{font-size: 15px; background-color:#99eebe;}
+    .navbar .dropdown-menu{font-size: 15px; background-color:rgb(183, 231, 204);}
+    .offcanvas-header{background-image: linear-gradient(315deg,  #c8d6e5 0%, #8ae9b3 74%); font-size: 20px;}
+    .offcanvas-title{font-size: 20px;font-family: 'Cinzel'; }
+    .offcanvas-body{background-color: rgb(222, 225, 240) }
     .titulocontenedor{
       background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
       opacity: 0.8; 
@@ -308,7 +319,7 @@ h2 {
         grid-template-columns: repeat(2,1fr);
         width: 100%;
         padding: 50px;
-        font-size: 10px;
+        font-size: 15px;
 }
 
 .Filosofía{
